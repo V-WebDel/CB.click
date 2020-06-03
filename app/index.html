@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+
+  <title>Advanced URL Shortener</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="btn-top">
+    <svg class="btn-top__svg"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header__line">
+            <a class="header__logo" href="#">
+              <img class="logo" src="./img/logo.svg" alt="Company logo">
+            </a>
+            <div class="header__block-btn">
+              <button class="btn header__btn header__btn_revers">ADD TO BROWSER</button>
+              <button class="btn header__btn">Sign Up</button>
+            </div>
+            <div class="select header__select">
+              <span class="select__arrow"></span>
+    
+              <div class="select__current">
+                <picture class="select__picture">
+                  <source srcset="./img/webp/languages/GB.webp, ./img/webp/languages/GB@2x.webp 2x" type="image/webp">
+                  <img class="select__img" src="./img/languages/GB.png" 
+                      srcset="./img/languages/GB@2x.png"
+                      alt="flag">
+                </picture>
+                EN
+              </div>
+              
+              <ul class="select__list lst">
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/DE.webp, ./img/webp/languages/DE@2x.webp 2x" type="image/webp">
+                      <img class="select__img" src="./img/languages/DE.png" 
+                          srcset="./img/languages/DE@2x.png"
+                          alt="flag">
+                    </picture>
+                    DE
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/ES.webp, ./img/webp/languages/ES@2x.webp 2x" type="image/webp">
+                      <img class="select__img" src="./img/languages/ES.png" 
+                          srcset="./img/languages/ES@2x.png"
+                          alt="flag">
+                    </picture>
+                    ES
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/FR.webp, ./img/webp/languages/FR@2x.webp 2x" type="image/webp">
+                      <img class="select__img" src="./img/languages/FR.png" 
+                          srcset="./img/languages/FR@2x.png"
+                          alt="flag">
+                    </picture>
+                    FR
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/IT.webp, ./img/webp/languages/IT@2x.webp 2x" type="image/webp">
+                      <img class="select__img" src="./img/languages/IT.png" 
+                          srcset="./img/languages/IT@2x.png"
+                          alt="flag">
+                    </picture>
+                    IT
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/RU.webp, ./img/webp/languages/RU@2x.webp 2x" type="image/webp">
+                      <img class="select__img" src="./img/languages/RU.png" 
+                          srcset="./img/languages/RU@2x.png"
+                          alt="flag">
+                    </picture>
+                    RU
+                  </a>
+                </li>
+                <li class="select__item">
+                  <a href="#" class="select__link">
+                    <picture class="select__picture">
+                      <source srcset="./img/webp/languages/PT.webp, ./img/webp/languages/PT@2x.webp 2x" type="image/webp">
+                      <img class="select__img" 
+                          src="./img/languages/PT.png" 
+                          srcset="./img/languages/PT@2x.png"
+                          alt="flag">
+                    </picture>
+                    PT
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="top">
+    <svg class="top__svg-wave" viewBox="0 0 1280 99" xmlns="http://www.w3.org/2000/svg"><path d="M0 0c253.333 80.667 486.667 107.667 700 81 320-40 320-81 580-81v99H0V0z" fill="#ffffff" fill-rule="evenodd"/></svg>
+    
+    <a class="no-btn top__btn-bottom" href="#advantages">
+      <span></span>
+      <svg>
+        <use xlink:href="img/sprite.svg#arrow-down"></use>
+      </svg>
+    </a>
+    <div class="container container-relative container-cursor">
+      <svg class="top__cursor top__cursor_1" data-speed="1"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_2" data-speed="-2"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_3" data-speed="-1"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_4" data-speed="2"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_5" data-speed="-2"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_6" data-speed="-2"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      <svg class="top__cursor top__cursor_7" data-speed="1"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+      
+      <div class="row">
+        <div class="col-12">
+          <div class="top__block top__block_top">
+            <p class="top__subtitle">URL Shortner tool from CryptoTab</p>
+            <h1 class="top__title wow">Advanced URL Shortener</h1>
+            <p class="top__text">This tool will help you to turn a long and complicated link into a short one and get complete statistics with advanced features.</p>
+          </div>
+          <div class="top__block top__block_form">
+            <form class="form form-search top__form">
+                <input class="form-search__input" placeholder="Paste a long URL here" type="search">
+                <button class="btn form-search__btn" type="submit">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#clip-btn"></use>
+                  </svg>
+                  Shorten
+                </button>
+            </form>
+          </div>
+          <div class="top__block top__block_bottom">
+            <p class="top__title-list"><a class="link-in-text" href="#">Sign Up</a> to get all advanced features for your short URLs:</p>
+            <ul class="functions__list lst">
+              <li class="functions__item">Complete Analytics</li>
+              <li class="functions__item">Powerful Dashboard</li>
+              <li class="functions__item">URL Password Protect</li>
+              <li class="functions__item">Short URL History</li>
+              <li class="functions__item">Custom GEO Re-directing</li>
+              <li class="functions__item">Ad Splash Pages</li>
+            </ul>
+            <p class="top__text">and more ...</p>
+            <a class="btn top__btn link-btn wow" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <svg class="advantages__svg-top">
+            <use xlink:href="img/sprite.svg#clips"></use>
+          </svg>
+          <h2 class="title-text wow">One short link, infinite possibilities.</h2>
+          <p class="advantages__subtitle">A short link is a powerful marketing tool when you use it carefully. It is not just a link but a medium between your customer and their destination. A short link allows you to collect so much data about your customers and their behaviors.</p>
+        </div>
+        <div class="col-12">
+          <ul class="advantages__list lst">
+            <li class="advantages__item wow">
+              <div class="advantages__image">
+                <svg>
+                  <use xlink:href="img/sprite.svg#geo"></use>
+                </svg>
+              </div>
+              <div class="advantages__content">
+                <h4 class="advantages__title">Target. Re-target.</h4>
+                <p class="advantages__text">Target your customers to increase your reach and redirect them to a relevant page. Add a pixel to retarget them in your social media ad campaign to capture them.</p>
+              </div>
+            </li>
+            <li class="advantages__item wow" data-wow-delay="0.2s">
+              <div class="advantages__image">
+                <svg>
+                  <use xlink:href="img/sprite.svg#optimize"></use>
+                </svg>
+              </div>
+              <div class="advantages__content">
+                <h4 class="advantages__title">Measure. Optimize</h4>
+                <p class="advantages__text">Share your links to your network and measure data to optimize your marketing campaign's performance. Reach an audience that fits your needs.</p>
+              </div>
+            </li>
+            <li class="advantages__item wow" data-wow-delay="0.4s">
+              <div class="advantages__image">
+                <svg class="svg_people">
+                  <use xlink:href="img/sprite.svg#people"></use>
+                </svg>
+              </div>
+              <div class="advantages__content">
+                <h4 class="advantages__title">Perfect for network growing and marketing</h4>
+                <p class="advantages__text">Understanding your users and will help you increase your conversion. Our system allows you to track everything. Whether it is the amount of clicks, the country or the referrer, the data is there for you to analyze it.</p>
+              </div>
+            </li>
+          </ul>
+          <a class="btn link-btn wow" href="#">CREATE AN ACCOUNT</a>
+          <p class="advantages__annotation">This service is free of charge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo promo_orange">
+    <picture class="promo__notebook promo__notebook_right">
+      <source srcset="./img/webp/notebook.webp, ./img/webp/notebook@2x.webp 2x" type="image/webp">
+      <img src="./img/notebook.png" 
+          srcset="./img/notebook@2x.png"
+          alt="Laptop with our program">
+    </picture>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          <div class="promo__wrap promo__wrap_left">
+            <p class="promo__subtitle left wow">Target interested users.</p>
+            <h2 class="promo__title promo__title_white left wow">Powerful tools that work</h2>
+            <p class="promo__text left wow">Our product lets your target your users to better understand their behavior and provide them a better overall experience through smart re-targeting. We provide you many powerful tools to reach them better.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="control">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="control__uptitle">Control on each and everything.</p>
+          <h2 class="title-text title-text_white wow">Complete control on your links</h2>
+          <p class="control__subtitle">With our premium membership, you will have complete control on your links. This means you can change the destination anytime you want. Add, change or remove any filters, anytime.</p>
+        </div>
+        <div class="col-12">
+          <ul class="control__list lst">
+            <li class="control__item">
+              <div class="control__image wow">
+                <svg class="control__svg">
+                  <use xlink:href="img/sprite.svg#link-control"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Link Controls</h4>
+            </li>
+            <li class="control__item">
+              <div class="control__image control__image_orange wow">
+                <svg class="control__svg">
+                  <use xlink:href="img/sprite.svg#link-managment"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Link Managment</h4>
+            </li>
+            <li class="control__item">
+              <div class="control__image control__image_white wow">
+                <svg class="control__svg control__svg_small">
+                  <use xlink:href="img/sprite.svg#privacy"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Privacy Control</h4>
+            </li>
+            <li class="control__item">
+              <div class="control__image control__image_white wow">
+                <svg class="control__svg">
+                  <use xlink:href="img/sprite.svg#powerful"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Powerful Dashboard</h4>
+            </li>
+            <li class="control__item">
+              <div class="control__image wow">
+                <svg class="control__svg control__svg_small">
+                  <use xlink:href="img/sprite.svg#statistics"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Statistics</h4>
+            </li>
+            <li class="control__item">
+              <div class="control__image wow">
+                <svg class="control__svg control__svg_big">
+                  <use xlink:href="img/sprite.svg#bitcoin"></use>
+                </svg>
+              </div>
+              <h4 class="control__title">Monetization</h4>
+            </li>
+          </ul>
+          <a class="btn link-btn wow" href="#">TRY NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <picture class="promo__notebook promo__notebook_left">
+      <source srcset="./img/webp/browser.webp, ./img/webp/browser@2x.webp 2x" type="image/webp">
+      <img src="./img/browser.png" 
+          srcset="./img/browser@2x.png"
+          alt="Laptop with our program">
+    </picture>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-6 ">
+          <div class="promo__wrap promo__wrap_right">
+            <p class="promo__subtitle promo__subtitle_accent right wow">Target interested users.</p>
+            <h2 class="promo__title right wow">Extension for your browser</h2>
+            <p class="promo__text right wow">Our product lets your target your users to better understand their behavior and provide them a better overall experience through smart re-targeting. We provide you many powerful tools to reach them better.</p>
+            <a class="btn promo__btn wow" href="#">
+              <svg>
+                <use xlink:href="img/sprite.svg#chrome"></use>
+              </svg>
+              <span class="promo__btn_subname">Get it on</span>
+              <span class="promo__btn_name">Chrome Web Store</span>
+            </a>
+            <p class="promo__annotation">Compatible with Chrome, CryptoTab, Yandex, Opera etc. browsers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap_targeting-marketing">
+
+    <section class="targeting">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title-text title-text_white wow">Targeting your customers</h2>
+          </div>
+          <div class="col-12">
+            <ul class="targeting__list lst">
+              <li class="targeting__item">
+                <div class="targeting__image wow">
+                  <svg class="svg_customers">
+                    <use xlink:href="img/sprite.svg#customers"></use>
+                  </svg>
+                </div>
+                <div class="targeting__content">
+                  <h4 class="targeting__title">Target Customers</h4>
+                  <p class="targeting__text">Target your users based on their location and device and redirect them to specialized pages to increase your conversion.</p>
+                </div>
+              </li>
+              <li class="targeting__item">
+                <div class="targeting__image wow" data-wow-delay="0.3s">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#landings"></use>
+                  </svg>
+                </div>
+                <div class="targeting__content">
+                  <h4 class="targeting__title">Custom Landing Page</h4>
+                  <p class="targeting__text">Create a custom landing page to promote your product or service on forefront and engage the user in your marketing campaign.</p>
+                </div>
+              </li>
+              <li class="targeting__item">
+                <div class="targeting__image wow" data-wow-delay="0.6s">
+                  <svg class="svg_aliases">
+                    <use xlink:href="img/sprite.svg#aliases"></use>
+                  </svg>
+                </div>
+                <div class="targeting__content">
+                  <h4 class="targeting__title">Custom Aliases</h4>
+                  <p class="targeting__text">As a premium membership, you will be able to choose a premium alias for your links from our list of reserved aliases.</p>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marketing">
+      <div class="container container-relative marketing-container">
+        <svg class="marketing__cursor"><use xlink:href="img/sprite.svg#cursor"></use></svg>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title-text title-text_white wow">Marketing with confidence.</h2>
+          </div>
+          <div class="col-12">
+            <ul class="marketing__list lst">
+              <li class="marketing__item">
+                <h4 class="marketing__title">Powering</h4>
+                <div class="marketing__count count_1" data-from="0">
+                  314556
+                </div>
+                <span class="marketing__subtitle">Links</span>
+              </li>
+              <li class="marketing__item">
+                <h4 class="marketing__title">Serving</h4>
+                <div class="marketing__count count_2" data-from="0">
+                  21314556
+                </div>
+                <span class="marketing__subtitle">clicks</span>
+              </li>
+              <li class="marketing__item">
+                <h4 class="marketing__title">Trusted by</h4>
+                <div class="marketing__count count_3" data-from="0">
+                  9314556
+                </div>
+                <span class="marketing__subtitle">Customers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="bottom">
+    <picture class="bottom__lady">
+      <source srcset="./img/webp/lady.webp, ./img/webp/lady@2x.webp 2x" type="image/webp">
+      <img src="./img/lady.png" 
+          srcset="./img/lady@2x.png"
+          alt="A lady with a megaphone">
+    </picture>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          <div class="bottom__wrap">
+            <svg class="bottom__svg left wow">
+              <use xlink:href="img/sprite.svg#CB"></use>
+            </svg>
+            <h2 class="bottom__title left wow">Let’s be partners</h2>
+            <p class="bottom__text left wow">
+              Start your marketing campaigns with CB.click URL shortener now and reach your customers in a more efficient way. Growth your 
+              <a class="link-in-text" href="#">CryptoTab</a> network efficiently and earn bitcoins on your links clicks.
+            </p>
+            <a class="btn link-btn bottom__btn wow" href="#">REGISTER NOW</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a class="header__logo" href="#">
+            <img class="logo" src="./img/logo_inverse.svg" alt="Company logo">
+          </a>
+        </div>
+        <div class="col-12">
+          <div class="footer__wrap">
+            <ul class="footer__list footer__list_general lst">
+              <li class="footer__item footer__item_title">General</li>
+              <li class="footer__item">
+                <a class="footer__link footer__link_visited" href="#">Overview</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Browser Extension</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sign Up</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Support</a>
+              </li>
+            </ul>
+            <ul class="footer__list footer__list_additional lst">
+              <li class="footer__item footer__item_title">Additional</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Use</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Advertise</a>
+              </li>
+            </ul>
+            <ul class="footer__list footer__list_tab lst">
+              <li class="footer__item footer__item_title">CryptoTab Family</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">CryptoTab <span class="text-bold">Browser</span></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">CryptoTab <span class="text-bold">for Android</span></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">CryptoTab <span class="text-bold">for iOS</span></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">CryptoTab <span class="text-bold">START</span> <span class="bonus">BONUS</span></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">CB.click <span class="new">NEW</span></a>
+              </li>
+            </ul>
+            <ul class="footer__list footer__list_connected lst">
+              <li class="footer__item footer__item_title">Stay Connected</li>
+              <li class="footer__item footer__item_social">
+                <a href="https://www.facebook.com/">
+                  <svg class="footer__svg"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                </a>
+                <a href="https://tele.click/">
+                  <svg class="footer__svg"><use xlink:href="img/sprite.svg#telegram"></use></svg>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <svg class="footer__svg"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+                </a>
+                <a href="https://www.youtube.com/">
+                  <svg class="footer__svg"><use xlink:href="img/sprite.svg#youtube"></use></svg>
+                </a>
+                <a href="https://vk.com/">
+                  <svg class="footer__svg"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                </a>
+                –  join us
+              </li>
+              <li class="footer__item footer__item_like">
+                <span class="like"> 
+                  <svg class="like__svg"><use xlink:href="img/sprite.svg#like"></use></svg>
+                  <span class="like__span text-bold">Like </span>
+                  148K
+                </span>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Support <span class="text-special">Here</span></a>
+              </li>
+              <li class="footer__item">
+                Other Inquiries: <a class="footer__link footer__link_email" href="mailto:contactus@cryptobrowser.site">contactus@cryptobrowser.site</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright__wrap">
+              <span class="copyright__text">© 2020. All rights reserved.</span>
+              <div class="select select_inverse">
+                <span class="select__arrow"></span>
+      
+                <div class="select__current">
+                  <picture class="select__picture">
+                    <source srcset="./img/webp/languages/GB.webp, ./img/webp/languages/GB@2x.webp 2x" type="image/webp">
+                    <img class="select__img" src="./img/languages/GB.png" 
+                        srcset="./img/languages/GB@2x.png"
+                        alt="flag">
+                  </picture>
+                  EN
+                </div>
+                
+                <ul class="select__list lst">
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/DE.webp, ./img/webp/languages/DE@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/DE.png" 
+                            srcset="./img/languages/DE@2x.png"
+                            alt="flag">
+                      </picture>
+                      DE
+                    </a>
+                  </li>
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/ES.webp, ./img/webp/languages/ES@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/ES.png" 
+                            srcset="./img/languages/ES@2x.png"
+                            alt="flag">
+                      </picture>
+                      ES
+                    </a>
+                  </li>
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/FR.webp, ./img/webp/languages/FR@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/FR.png" 
+                            srcset="./img/languages/FR@2x.png"
+                            alt="flag">
+                      </picture>
+                      FR
+                    </a>
+                  </li>
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/IT.webp, ./img/webp/languages/IT@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/IT.png" 
+                            srcset="./img/languages/IT@2x.png"
+                            alt="flag">
+                      </picture>
+                      IT
+                    </a>
+                  </li>
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/RU.webp, ./img/webp/languages/RU@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/RU.png" 
+                            srcset="./img/languages/RU@2x.png"
+                            alt="flag">
+                      </picture>
+                      RU
+                    </a>
+                  </li>
+                  <li class="select__item">
+                    <a href="#" class="select__link">
+                      <picture class="select__picture">
+                        <source srcset="./img/webp/languages/PT.webp, ./img/webp/languages/PT@2x.webp 2x" type="image/webp">
+                        <img class="select__img" src="./img/languages/PT.png" 
+                            srcset="./img/languages/PT@2x.png"
+                            alt="flag">
+                      </picture>
+                      PT
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
